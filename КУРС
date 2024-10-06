@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простой сайт с картинками</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать на мой сайт!</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Картинки</h2>
+            <div class="gallery">
+                <img src="image1.jpg" alt="Описание картинки 1">
+                <img src="image2.jpg" alt="Описание картинки 2">
+                <img src="image3.jpg" alt="Описание картинки 3">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Мой простой сайт</p>
+    </footer>
+</body>
+</html>
+Шаг 2: CSS для стилизации
+Создадим файл styles.css для оформления нашего сайта:
+
+css
+Копировать
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery img {
+    max-width: 300px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
